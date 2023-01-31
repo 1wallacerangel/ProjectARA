@@ -5,6 +5,7 @@
 	--button-width: 0.333em;
 	--ease-out: cubic-bezier(.15, 0, .333, 1);
 	--border-width: 0.4em;
+    --margin-blocks:4% 4% 4% 0;
 }
 @-webkit-keyframes appear{
 	to{
@@ -47,17 +48,17 @@ body{
     background: yellow;
     position: relative;
 	aspect-ratio: 37/76;
-    margin: 10px 10px 10px 0;
-    width: 35%;
-    height: 35%;
+    margin: var(--margin-blocks);
+    width: 30%;
+    height: 30%;
 	border-radius: var(--border-radius);
 }
 .grid2{
     background: yellow;
     position: relative;
 	aspect-ratio: 37/76;
-    margin: 10px 10px 10px 0;
-    width: 35%;
+    margin: var(--margin-blocks);
+    width: 30%;
     height: 28%;
 	border-radius: var(--border-radius);
 }
@@ -65,18 +66,62 @@ body{
     background: yellow;
     position: relative;
 	aspect-ratio: 37/76;
-    margin: 10px 10px 10px 0;
-    width: 35%;
-    height: 15%;
+    margin: var(--margin-blocks);
+    width: 30%;
+    height: 16%;
 	border-radius: var(--border-radius);
 }
 .grid4{
     background: yellow;
     position: relative;
 	aspect-ratio: 37/76;
-    margin: 10px 10px 10px 0;
-    width: 35%;
-    height: 15%;
+    margin: var(--margin-blocks);
+    width: 30%;
+    height: 16%;
+	border-radius: var(--border-radius);
+}
+.grid5{
+    background: yellow;
+    position: absolute;
+    top:0;
+    left: 34%;
+	aspect-ratio: 37/76;
+    margin: 4% 4% 4% 0;
+    width: 66%;
+    height: 16%;
+	border-radius: var(--border-radius);
+}
+.grid6{
+    background: yellow;
+    position: absolute;
+    top:18%;
+    left: 34%;
+	aspect-ratio: 37/76;
+    margin: 4% 4% 4% 0;
+    width: 66%;
+    height: 29%;
+	border-radius: var(--border-radius);
+}
+.grid7{
+    background: yellow;
+    position: absolute;
+    top:49%;
+    left: 34%;
+	aspect-ratio: 37/76;
+    margin: 4% 4% 4% 0;
+    width: 66%;
+    height: 29%;
+	border-radius: var(--border-radius);
+}
+.grid8{
+    background: yellow;
+    position: absolute;
+    top:80%;
+    left: 34%;
+	aspect-ratio: 37/76;
+    margin: 4% 4% 4% 0;
+    width: 66%;
+    height: 16%;
 	border-radius: var(--border-radius);
 }
 .buttons{
