@@ -52,6 +52,7 @@ body{
     width: 30%;
     height: 30%;
 	border-radius: var(--border-radius);
+    cursor: pointer;
 }
 .grid2{
     background: yellow;
@@ -61,6 +62,7 @@ body{
     width: 30%;
     height: 28%;
 	border-radius: var(--border-radius);
+    cursor: pointer;
 }
 .grid3{
     background: yellow;
@@ -70,6 +72,7 @@ body{
     width: 30%;
     height: 16%;
 	border-radius: var(--border-radius);
+    cursor: pointer;
 }
 .grid4{
     background: yellow;
@@ -79,6 +82,7 @@ body{
     width: 30%;
     height: 16%;
 	border-radius: var(--border-radius);
+    cursor: pointer;
 }
 .grid5{
     background: yellow;
@@ -88,41 +92,45 @@ body{
 	aspect-ratio: 37/76;
     margin: 4% 4% 4% 0;
     width: 66%;
-    height: 16%;
+    height: 15%;
 	border-radius: var(--border-radius);
+    cursor: pointer;
 }
 .grid6{
     background: yellow;
     position: absolute;
-    top:18%;
+    top:17%;
     left: 34%;
 	aspect-ratio: 37/76;
     margin: 4% 4% 4% 0;
     width: 66%;
     height: 29%;
 	border-radius: var(--border-radius);
+    cursor: pointer;
 }
 .grid7{
     background: yellow;
     position: absolute;
-    top:49%;
+    top:48%;
     left: 34%;
 	aspect-ratio: 37/76;
     margin: 4% 4% 4% 0;
     width: 66%;
     height: 29%;
 	border-radius: var(--border-radius);
+    cursor: pointer;
 }
 .grid8{
     background: yellow;
     position: absolute;
-    top:80%;
+    top:79.6%;
     left: 34%;
 	aspect-ratio: 37/76;
     margin: 4% 4% 4% 0;
     width: 66%;
     height: 16%;
 	border-radius: var(--border-radius);
+    cursor: pointer;
 }
 .buttons{
 	position: absolute;
