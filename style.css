@@ -147,18 +147,18 @@ body{
 }
 .buttons .left{
 	right: 100%;
-	top: calc(var(--border-radius) * 14);
+	top: calc(var(--border-radius) * 18);
 }
 .buttons .left .button{
-	height: 6rem;
+	height: 2rem;
 }
 .buttons .right{
 	left: 100%;
 	transform: scale3d(-1, 1, 1);
-	top: calc(var(--border-radius) * 18);
+	top: calc(var(--border-radius) * 14);
 }
 .buttons .right .button{
-	height: 2rem;
+	height: 6rem;
 }
 .buttons .button{
 	background: white;
