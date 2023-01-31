@@ -1,0 +1,117 @@
+:root{
+	--size: max(5px, 1vmin);
+	--heght: 80em;
+	--border-radius: 0.5rem;
+	--button-width: 0.333em;
+	--ease-out: cubic-bezier(.15, 0, .333, 1);
+	--border-width: 0.4em;
+}
+@-webkit-keyframes appear{
+	to{
+		transform: scale3d(1, 1, 1);
+		opacity: 1;
+	}
+}
+@keyframes appear{
+	to{
+		transform: scale3d(1, 1, 1);
+		opacity: 1;
+	}
+}
+body{
+	background: #00000a;
+	display: flex;
+	flex-direction: column;
+	gap: 3em;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	font-family: 'Inter';
+	font-size: var(--size);
+}
+.phone{
+	position: relative;
+	z-index: 1;
+	aspect-ratio: 37/76;
+	background: rgb(17, 0, 255);
+	height: var(--heght);
+	border-radius: var(--border-radius);
+	box-sizing: border-box;
+	opacity: 0;
+	transform: scale3d(1.1, 1.1, 1);
+	-webkit-animation: appear 1s var(--ease-out) forwards;
+	animation: appear 1s var(--ease-out) forwards;
+	-webkit-backface-visibility: hidden;
+}
+.grid1{
+    background: yellow;
+    position: relative;
+	aspect-ratio: 37/76;
+    margin: 10px 10px 10px 0;
+    width: 35%;
+    height: 35%;
+	border-radius: var(--border-radius);
+}
+.grid2{
+    background: yellow;
+    position: relative;
+	aspect-ratio: 37/76;
+    margin: 10px 10px 10px 0;
+    width: 35%;
+    height: 28%;
+	border-radius: var(--border-radius);
+}
+.grid3{
+    background: yellow;
+    position: relative;
+	aspect-ratio: 37/76;
+    margin: 10px 10px 10px 0;
+    width: 35%;
+    height: 15%;
+	border-radius: var(--border-radius);
+}
+.grid4{
+    background: yellow;
+    position: relative;
+	aspect-ratio: 37/76;
+    margin: 10px 10px 10px 0;
+    width: 35%;
+    height: 15%;
+	border-radius: var(--border-radius);
+}
+.buttons{
+	position: absolute;
+	inset: calc(var(--border-width) * -1);
+	pointer-events: none;
+}
+.buttons .left, .buttons .right{
+	position: absolute;
+	width: var(--button-width);
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 1.5em;
+}
+.buttons .left{
+	right: 100%;
+	top: calc(var(--border-radius) * 14);
+}
+.buttons .left .button{
+	height: 6rem;
+}
+.buttons .right{
+	left: 100%;
+	transform: scale3d(-1, 1, 1);
+	top: calc(var(--border-radius) * 18);
+}
+.buttons .right .button{
+	height: 2rem;
+}
+.buttons .button{
+	background: white;
+	height: 6em;
+	border-top-left-radius: 0.2em;
+	border-bottom-left-radius: 0.2em;
+}
+
+
