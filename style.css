@@ -6,21 +6,7 @@
 	--ease-out: cubic-bezier(.15, 0, .333, 1);
 	--border-width: 0.4em;
 	--margin-blocks: 4% 4% 4% 0;
-	--grid-color: rgb(0, 17, 255);
-}
-
-@-webkit-keyframes appear {
-	to {
-		transform: scale3d(1, 1, 1);
-		opacity: 1;
-	}
-}
-
-@keyframes appear {
-	to {
-		transform: scale3d(1, 1, 1);
-		opacity: 1;
-	}
+	--grid-color: #001aff;
 }
 
 body {
@@ -43,11 +29,6 @@ body {
 	height: var(--heght);
 	border-radius: var(--border-radius);
 	box-sizing: border-box;
-	opacity: 0;
-	transform: scale3d(1.1, 1.1, 1);
-	-webkit-animation: appear 1s var(--ease-out) forwards;
-	animation: appear 1s var(--ease-out) forwards;
-	-webkit-backface-visibility: hidden;
 }
 
 .grid1 {
@@ -60,7 +41,6 @@ body {
 	border-radius: var(--border-radius);
 	cursor: pointer;
 }
-
 .grid2 {
 	background: yellow;
 	position: relative;
@@ -144,46 +124,4 @@ body {
 	height: 16%;
 	border-radius: var(--border-radius);
 	cursor: pointer;
-}
-
-.buttons {
-	position: absolute;
-	inset: calc(var(--border-width) * -1);
-	pointer-events: none;
-}
-
-.buttons .left,
-.buttons .right {
-	position: absolute;
-	width: var(--button-width);
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-	gap: 1.5em;
-}
-
-.buttons .left {
-	right: 100%;
-	top: calc(var(--border-radius) * 46);
-}
-
-.buttons .left .button {
-	height: 2rem;
-}
-
-.buttons .right {
-	left: 100%;
-	transform: scale3d(-1, 1, 1);
-	top: calc(var(--border-radius) * 24);
-}
-
-.buttons .right .button {
-	height: 6rem;
-}
-
-.buttons .button {
-	background: white;
-	height: 6em;
-	border-top-left-radius: 0.2em;
-	border-bottom-left-radius: 0.2em;
 }
