@@ -30,7 +30,7 @@ body {
 input[type="checkbox"] {
 	min-width: 100%;
 	min-height: 100%;
-	background-color: var(--main-body);
+	background-color: #e40000;
 	transform: skewY(-15deg);
 	-webkit-appearance: none;
 	outline: none;
@@ -158,7 +158,7 @@ input[type="checkbox"] {
 	height: 30px;
 	top: -30px;
 	left: 0;
-	background: var(--shadow-light-gray);
+	background: #db4040;;
 	transform: skewx(45deg);
 	transform-origin: bottom;
   }
@@ -168,14 +168,16 @@ input[type="checkbox"] {
 	height: 100%;
 	top: 0;
 	left: -30px;
-	background: var(--shadow-dark-gray);
+	background: #831010;
 	transform: skewy(45deg);
 	transform-origin: right;
   }
   
   .mark {
 	min-width: 35%;
-	min-height: 35%;
+	min-height: 30%;
+
+	margin-left: -1.5%;
 	background: var(--main-body);
 	position: absolute;
 	top: 0;
@@ -184,7 +186,6 @@ input[type="checkbox"] {
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
-  
   .mark:before,
   .mark:after {
 	content: "";
@@ -212,11 +213,316 @@ input[type="checkbox"] {
 	transform-origin: right;
   }
   
-
+  .mark2 {
+	margin-top: 65%;
+	margin-left: -2%;
+	min-width: 35%;
+	min-height: 30%;
+	background: var(--main-body);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: skewY(-15deg) translate3d(20%, 22%, 0);
+	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
   
-  input[type="checkbox"]:checked ~ label[for="cool"] {
-	transform: skewy(-15deg) translate3d(-100%, 22%, 0);
+  .mark2:before,
+  .mark2:after {
+	content: "";
+	position: absolute;
+	transition: all 500ms;
+  }
+  
+  .mark2:before {
+	background: var(--shadow-light-gray);
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	transform: skewx(45deg);
+	transform-origin: bottom;
+  }
+  
+  .mark2:after {
+	background: var(--shadow-dark-gray);
+	top: 0;
+	left: -10px;
+	width: 10px;
+	height: 100%;
+	transform: skewy(45deg);
+	transform-origin: right;
+  }
+  
+  .mark3 {
+	margin-top: 135%;
+	margin-left: -2%;
+	min-width: 35%;
+	min-height: 17.5%;
+	background: var(--main-body);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: skewY(-15deg) translate3d(20%, 22%, 0);
+	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mark3:before,
+  .mark3:after {
+	content: "";
+	position: absolute;
+	transition: all 500ms;
+  }
+  
+  .mark3:before {
+	background: var(--shadow-light-gray);
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	transform: skewx(45deg);
+	transform-origin: bottom;
+  }
+  
+  .mark3:after {
+	background: var(--shadow-dark-gray);
+	top: 0;
+	left: -10px;
+	width: 10px;
+	height: 100%;
+	transform: skewy(45deg);
+	transform-origin: right;
+  }
 
+  .mark4 {
+	margin-top: 175%;
+	margin-left: -2%;
+	min-width: 35%;
+	min-height: 17.5%;
+	background: var(--main-body);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: skewY(-15deg) translate3d(20%, 22%, 0);
+	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mark4:before,
+  .mark4:after {
+	content: "";
+	position: absolute;
+	transition: all 500ms;
+  }
+  
+  .mark4:before {
+	background: var(--shadow-light-gray);
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	transform: skewx(45deg);
+	transform-origin: bottom;
+  }
+  
+  .mark4:after {
+	background: var(--shadow-dark-gray);
+	top: 0;
+	left: -10px;
+	width: 10px;
+	height: 100%;
+	transform: skewy(45deg);
+	transform-origin: right;
+  }
+
+  .mark5 {
+	margin-top: -6%;
+	margin-left: 35%;
+	min-width: 60%;
+	min-height: 17.5%;
+	background: var(--main-body);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: skewY(-15deg) translate3d(20%, 22%, 0);
+	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mark5:before,
+  .mark5:after {
+	content: "";
+	position: absolute;
+	transition: all 500ms;
+  }
+  
+  .mark5:before {
+	background: var(--shadow-light-gray);
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	transform: skewx(45deg);
+	transform-origin: bottom;
+  }
+  
+  .mark5:after {
+	background: var(--shadow-dark-gray);
+	top: 0;
+	left: -10px;
+	width: 10px;
+	height: 100%;
+	transform: skewy(45deg);
+	transform-origin: right;
+  }
+
+  .mark6 {
+	margin-top: 29%;
+	margin-left: 35%;
+	min-width: 60%;
+	min-height: 30%;
+	background: var(--main-body);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: skewY(-15deg) translate3d(20%, 22%, 0);
+	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mark6:before,
+  .mark6:after {
+	content: "";
+	position: absolute;
+	transition: all 500ms;
+  }
+  
+  .mark6:before {
+	background: var(--shadow-light-gray);
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	transform: skewx(45deg);
+	transform-origin: bottom;
+  }
+  
+  .mark6:after {
+	background: var(--shadow-dark-gray);
+	top: 0;
+	left: -10px;
+	width: 10px;
+	height: 100%;
+	transform: skewy(45deg);
+	transform-origin: right;
+  }
+
+  .mark7 {
+	margin-top: 95%;
+	margin-left: 35%;
+	min-width: 60%;
+	min-height: 30%;
+	background: var(--main-body);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: skewY(-15deg) translate3d(20%, 22%, 0);
+	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mark7:before,
+  .mark7:after {
+	content: "";
+	position: absolute;
+	transition: all 500ms;
+  }
+  
+  .mark7:before {
+	background: var(--shadow-light-gray);
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	transform: skewx(45deg);
+	transform-origin: bottom;
+  }
+  
+  .mark7:after {
+	background: var(--shadow-dark-gray);
+	top: 0;
+	left: -10px;
+	width: 10px;
+	height: 100%;
+	transform: skewy(45deg);
+	transform-origin: right;
+  }
+
+  .mark8 {
+	margin-top: 167%;
+	margin-left: 35%;
+	min-width: 60%;
+	min-height: 17.5%;
+	background: var(--main-body);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: skewY(-15deg) translate3d(20%, 22%, 0);
+	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mark8:before,
+  .mark8:after {
+	content: "";
+	position: absolute;
+	transition: all 500ms;
+  }
+  
+  .mark8:before {
+	background: var(--shadow-light-gray);
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	transform: skewx(45deg);
+	transform-origin: bottom;
+  }
+  
+  .mark8:after {
+	background: var(--shadow-dark-gray);
+	top: 0;
+	left: -10px;
+	width: 10px;
+	height: 100%;
+	transform: skewy(45deg);
+	transform-origin: right;
+  }
+
+  input[type="checkbox"]:checked ~ label[for="cool"] {
+	transform: skewy(-15deg) translate3d(-150%, 22%, 0);
+  }
+  input[type="checkbox"]:checked ~ label[for="cool2"] {
+	transform: skewy(-15deg) translate3d(-150%, 22%, 0);
+  }
+  input[type="checkbox"]:checked ~ label[for="cool3"] {
+	transform: skewy(-15deg) translate3d(-150%, 22%, 0);
+  }
+  input[type="checkbox"]:checked ~ label[for="cool4"] {
+	transform: skewy(-15deg) translate3d(-150%, 22%, 0);
+  }
+  input[type="checkbox"]:checked ~ label[for="cool5"] {
+	transform: skewy(-15deg) translate3d(150%, 22%, 0);
+  }
+  input[type="checkbox"]:checked ~ label[for="cool6"] {
+	transform: skewy(-15deg) translate3d(150%, 22%, 0);
+  }
+  input[type="checkbox"]:checked ~ label[for="cool7"] {
+	transform: skewy(-15deg) translate3d(150%, 22%, 0);
+  }
+  input[type="checkbox"]:checked ~ label[for="cool8"] {
+	transform: skewy(-15deg) translate3d(150%, 22%, 0);
   }
   /*
   input[type="checkbox"]:checked ~ label[for="cool"]:before {
