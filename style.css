@@ -12,7 +12,7 @@
 
 body {
 	margin: 0;
-	background: #fff;
+	background: rgb(126, 126, 126);
 	display: flex;
 	flex-direction: column;
 	gap: 3em;
@@ -30,6 +30,7 @@ body {
 input[type="checkbox"] {
 	min-width: 100%;
 	min-height: 100%;
+	/*background: var(--main-body);*/
 	background-color: #e40000;
 	transform: skewY(-15deg);
 	-webkit-appearance: none;
@@ -155,29 +156,31 @@ input[type="checkbox"] {
   
   input[type="checkbox"]:before {
 	width: 100%;
-	height: 30px;
-	top: -30px;
+	height: 20px;
+	top: -20px;
 	left: 0;
-	background: #db4040;;
+	background: var(--shadow-light-gray);
+	/*background: #db4040;;*/
 	transform: skewx(45deg);
 	transform-origin: bottom;
   }
   
   input[type="checkbox"]:after {
-	width: 30px;
+	width: 20px;
 	height: 100%;
 	top: 0;
-	left: -30px;
-	background: #831010;
+	left: -20px;
+	background: var(--shadow-dark-gray);
+	/*background: #831010;*/
 	transform: skewy(45deg);
 	transform-origin: right;
   }
   
   .mark {
+	margin-top: 0.4%;
 	min-width: 35%;
 	min-height: 30%;
-
-	margin-left: -1.5%;
+	margin-left: -3%;
 	background: var(--main-body);
 	position: absolute;
 	top: 0;
@@ -185,6 +188,10 @@ input[type="checkbox"] {
 	transform: skewY(-15deg) translate3d(20%, 22%, 0);
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+  }
+  .mark:active{
+	margin-left: -60%;
   }
   .mark:before,
   .mark:after {
@@ -206,7 +213,7 @@ input[type="checkbox"] {
   .mark:after {
 	background: var(--shadow-dark-gray);
 	top: 0;
-	left: -10px;
+	left: -9px;
 	width: 10px;
 	height: 100%;
 	transform: skewy(45deg);
@@ -215,7 +222,7 @@ input[type="checkbox"] {
   
   .mark2 {
 	margin-top: 65%;
-	margin-left: -2%;
+	margin-left: -3%;
 	min-width: 35%;
 	min-height: 30%;
 	background: var(--main-body);
@@ -256,9 +263,9 @@ input[type="checkbox"] {
   
   .mark3 {
 	margin-top: 135%;
-	margin-left: -2%;
+	margin-left: -3%;
 	min-width: 35%;
-	min-height: 17.5%;
+	min-height: 18%;
 	background: var(--main-body);
 	position: absolute;
 	top: 0;
@@ -296,10 +303,10 @@ input[type="checkbox"] {
   }
 
   .mark4 {
-	margin-top: 175%;
-	margin-left: -2%;
+	margin-top: 174.5%;
+	margin-left: -3%;
 	min-width: 35%;
-	min-height: 17.5%;
+	min-height: 18%;
 	background: var(--main-body);
 	position: absolute;
 	top: 0;
@@ -337,9 +344,9 @@ input[type="checkbox"] {
   }
 
   .mark5 {
-	margin-top: -6%;
-	margin-left: 35%;
-	min-width: 60%;
+	margin-top: -6.4%;
+	margin-left: 31.6%;
+	min-width: 60.8%;
 	min-height: 17.5%;
 	background: var(--main-body);
 	position: absolute;
@@ -370,7 +377,7 @@ input[type="checkbox"] {
   .mark5:after {
 	background: var(--shadow-dark-gray);
 	top: 0;
-	left: -10px;
+	left: -9px;
 	width: 10px;
 	height: 100%;
 	transform: skewy(45deg);
@@ -378,8 +385,8 @@ input[type="checkbox"] {
   }
 
   .mark6 {
-	margin-top: 29%;
-	margin-left: 35%;
+	margin-top: 27%;
+	margin-left: 32%;
 	min-width: 60%;
 	min-height: 30%;
 	background: var(--main-body);
@@ -419,8 +426,8 @@ input[type="checkbox"] {
   }
 
   .mark7 {
-	margin-top: 95%;
-	margin-left: 35%;
+	margin-top: 92%;
+	margin-left: 32%;
 	min-width: 60%;
 	min-height: 30%;
 	background: var(--main-body);
@@ -460,9 +467,9 @@ input[type="checkbox"] {
   }
 
   .mark8 {
-	margin-top: 167%;
-	margin-left: 35%;
-	min-width: 60%;
+	margin-top: 164%;
+	margin-left: 32%;
+	min-width: 61%;
 	min-height: 17.5%;
 	background: var(--main-body);
 	position: absolute;
@@ -522,7 +529,7 @@ input[type="checkbox"] {
 	transform: skewy(-15deg) translate3d(150%, 22%, 0);
   }
   input[type="checkbox"]:checked ~ label[for="cool8"] {
-	transform: skewy(-15deg) translate3d(150%, 22%, 0);
+	transform: skewy(-15deg) translate3d(80%, 22%, 0);
   }
   /*
   input[type="checkbox"]:checked ~ label[for="cool"]:before {

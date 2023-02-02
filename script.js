@@ -1,0 +1,5 @@
+var mark = document.querySelector('.mark');
+
+document.querySelector('.mark').onclick = () => {
+    mark.classList.toggle('active');
+}
