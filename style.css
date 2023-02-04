@@ -20,6 +20,7 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	font-size: var(--size);
+	overflow: hidden;
 }
 .phone {
 	position: relative;
@@ -191,7 +192,8 @@ input[type="checkbox"] {
 	cursor: pointer;
   }
   .mark:active{
-	margin-left: -60%;
+	margin-left: -65%;
+	margin-top: 15%;
   }
   .mark:before,
   .mark:after {
@@ -235,7 +237,8 @@ input[type="checkbox"] {
   }
   
   .mark2:active{
-	margin-left: -60%;
+	margin-left: -65%;
+	margin-top: 80%;
   }
 
   .mark2:before,
@@ -280,7 +283,8 @@ input[type="checkbox"] {
   }
   
   .mark3:active{
-	margin-left: -60%;
+	margin-left: -65%;
+	margin-top: 150%;
   }
 
   .mark3:before,
@@ -325,7 +329,8 @@ input[type="checkbox"] {
   }
   
   .mark4:active{
-	margin-left: -60%;
+	margin-left: -65%;
+	margin-top: 190%;
   }
 
   .mark4:before,
