@@ -1,4 +1,3 @@
-
 :root {
 	--size: max(5px, 0.85vmin);
 	--heght: 80em;
@@ -8,6 +7,9 @@
 	--border-width: 0.4em;
 	--margin-blocks: 4% 4% 4% 0;
 	--grid-color: #001aff;
+	--shadow-light-gray: #eee;
+	--shadow-dark-gray: #aaa;
+	--main-body: #ddd;
 }
 
 body {
@@ -22,12 +24,14 @@ body {
 	font-size: var(--size);
 	overflow: hidden;
 }
+
 .phone {
 	position: relative;
 	z-index: 1;
 	aspect-ratio: 37/76;
 	height: var(--heght);
 }
+
 input[type="checkbox"] {
 	min-width: 100%;
 	min-height: 100%;
@@ -38,124 +42,15 @@ input[type="checkbox"] {
 	outline: none;
 	transition: all 500ms;
 	box-shadow: -20px 10px 20px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-/*
-.grid1 {
-	background: yellow;
-	position: relative;
-	aspect-ratio: 37/76;
-	margin: var(--margin-blocks);
-	width: 30%;
-	height: 30%;
-	border-radius: var(--border-radius);
-	cursor: pointer;
-}
-.grid2 {
-	background: yellow;
-	position: relative;
-	aspect-ratio: 37/76;
-	margin: var(--margin-blocks);
-	width: 30%;
-	height: 28%;
-	border-radius: var(--border-radius);
-	cursor: pointer;
 }
 
-.grid3 {
-	background: yellow;
-	position: relative;
-	aspect-ratio: 37/76;
-	margin: var(--margin-blocks);
-	width: 30%;
-	height: 16%;
-	border-radius: var(--border-radius);
-	cursor: pointer;
-}
-
-.grid4 {
-	background: yellow;
-	position: relative;
-	aspect-ratio: 37/76;
-	margin: var(--margin-blocks);
-	width: 30%;
-	height: 16%;
-	border-radius: var(--border-radius);
-	cursor: pointer;
-}
-
-.grid5 {
-	background: yellow;
-	position: absolute;
-	top: 0;
-	left: 34%;
-	aspect-ratio: 37/76;
-	margin: 4% 4% 4% 0;
-	width: 66%;
-	height: 13.7%;
-	border-radius: var(--border-radius);
-	cursor: pointer;
-}
-
-.grid6 {
-	background: yellow;
-	position: absolute;
-	top: 15.8%;
-	left: 34%;
-	aspect-ratio: 37/76;
-	margin: 4% 4% 4% 0;
-	width: 66%;
-	height: 30%;
-	border-radius: var(--border-radius);
-	cursor: pointer;
-}
-
-.grid7 {
-	background: yellow;
-	position: absolute;
-	top: 47.85%;
-	left: 34%;
-	aspect-ratio: 37/76;
-	margin: 4% 4% 4% 0;
-	width: 66%;
-	height: 30%;
-	border-radius: var(--border-radius);
-	cursor: pointer;
-}
-
-.grid8 {
-	background: yellow;
-	position: absolute;
-	top: 79.9%;
-	left: 34%;
-	aspect-ratio: 37/76;
-	margin: 4% 4% 4% 0;
-	width: 66%;
-	height: 16%;
-	border-radius: var(--border-radius);
-	cursor: pointer;
-}
-*/
-:root {
-	--shadow-light-gray: #eee;
-	--shadow-dark-gray: #aaa;
-	--main-body: #ddd;
-	--main-color: hsl(330, 100%, 50%);
-	--shadow-light-main-color: hsl(325, 100%, 65%);
-	--shadow-dark-main-color: hsl(320, 80%, 45%);
-	--secondary-color: hsl(180, 100%, 50%);
-	--shadow-light-secondary-color: hsl(175, 100%, 65%);
-	--shadow-dark-secondary-color: hsl(180, 80%, 45%);
-  }
-  
-
-  input[type="checkbox"]:before,
-  input[type="checkbox"]:after {
+input[type="checkbox"]:before,
+input[type="checkbox"]:after {
 	content: "";
 	position: absolute;
-  }
-  
-  input[type="checkbox"]:before {
+}
+
+input[type="checkbox"]:before {
 	width: 100%;
 	height: 20px;
 	top: -20px;
@@ -164,9 +59,9 @@ input[type="checkbox"] {
 	/*background: #db4040;;*/
 	transform: skewx(45deg);
 	transform-origin: bottom;
-  }
-  
-  input[type="checkbox"]:after {
+}
+
+input[type="checkbox"]:after {
 	width: 20px;
 	height: 100%;
 	top: 0;
@@ -175,9 +70,9 @@ input[type="checkbox"] {
 	/*background: #831010;*/
 	transform: skewy(45deg);
 	transform-origin: right;
-  }
-  
-  .mark {
+}
+
+.mark {
 	margin-top: 0.4%;
 	min-width: 36.5%;
 	min-height: 30%;
@@ -190,8 +85,9 @@ input[type="checkbox"] {
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
-  }
-  .circle-main{
+}
+
+.circle-main {
 	margin-top: 30%;
 	margin-left: 35%;
 	min-width: 30%;
@@ -204,9 +100,9 @@ input[type="checkbox"] {
 	left: 0;
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	cursor: pointer;
-  }
+}
 
-  .circle{
+.circle {
 	margin-top: 22%;
 	margin-left: 20%;
 	min-width: 62%;
@@ -218,9 +114,9 @@ input[type="checkbox"] {
 	left: 0;
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	cursor: pointer;
-  }
+}
 
-  .circle-glass{
+.circle-glass {
 	margin-top: 18%;
 	margin-left: 38%;
 	min-width: 50%;
@@ -233,20 +129,21 @@ input[type="checkbox"] {
 	left: 0;
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	cursor: pointer;
-  }
+}
 
-  .mark:active{
+.mark:active {
 	margin-left: -65%;
 	margin-top: 15%;
-  }
-  .mark:before,
-  .mark:after {
+}
+
+.mark:before,
+.mark:after {
 	content: "";
 	position: absolute;
 	transition: all 500ms;
-  }
-  
-  .mark:before {
+}
+
+.mark:before {
 	background: var(--shadow-light-gray);
 	top: -10px;
 	left: 0;
@@ -254,9 +151,9 @@ input[type="checkbox"] {
 	height: 10px;
 	transform: skewx(45deg);
 	transform-origin: bottom;
-  }
-  
-  .mark:after {
+}
+
+.mark:after {
 	background: var(--shadow-dark-gray);
 	top: 0;
 	left: -9px;
@@ -264,9 +161,9 @@ input[type="checkbox"] {
 	height: 100%;
 	transform: skewy(45deg);
 	transform-origin: right;
-  }
-  
-  .mark2 {
+}
+
+.mark2 {
 	margin-top: 65%;
 	margin-left: -3%;
 	min-width: 36.5%;
@@ -278,21 +175,21 @@ input[type="checkbox"] {
 	transform: skewY(-15deg) translate3d(20%, 22%, 0);
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .mark2:active{
+}
+
+.mark2:active {
 	margin-left: -65%;
 	margin-top: 80%;
-  }
+}
 
-  .mark2:before,
-  .mark2:after {
+.mark2:before,
+.mark2:after {
 	content: "";
 	position: absolute;
 	transition: all 500ms;
-  }
-  
-  .mark2:before {
+}
+
+.mark2:before {
 	background: var(--shadow-light-gray);
 	top: -10px;
 	left: 0;
@@ -300,9 +197,9 @@ input[type="checkbox"] {
 	height: 10px;
 	transform: skewx(45deg);
 	transform-origin: bottom;
-  }
-  
-  .mark2:after {
+}
+
+.mark2:after {
 	background: var(--shadow-dark-gray);
 	top: 0;
 	left: -9px;
@@ -310,9 +207,9 @@ input[type="checkbox"] {
 	height: 100%;
 	transform: skewy(45deg);
 	transform-origin: right;
-  }
-  
-  .mark3 {
+}
+
+.mark3 {
 	margin-top: 135%;
 	margin-left: -3%;
 	min-width: 36.5%;
@@ -324,21 +221,21 @@ input[type="checkbox"] {
 	transform: skewY(-15deg) translate3d(20%, 22%, 0);
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .mark3:active{
+}
+
+.mark3:active {
 	margin-left: -65%;
 	margin-top: 150%;
-  }
+}
 
-  .mark3:before,
-  .mark3:after {
+.mark3:before,
+.mark3:after {
 	content: "";
 	position: absolute;
 	transition: all 500ms;
-  }
-  
-  .mark3:before {
+}
+
+.mark3:before {
 	background: var(--shadow-light-gray);
 	top: -10px;
 	left: 0;
@@ -346,9 +243,9 @@ input[type="checkbox"] {
 	height: 10px;
 	transform: skewx(45deg);
 	transform-origin: bottom;
-  }
-  
-  .mark3:after {
+}
+
+.mark3:after {
 	background: var(--shadow-dark-gray);
 	top: 0;
 	left: -9px;
@@ -356,9 +253,9 @@ input[type="checkbox"] {
 	height: 100%;
 	transform: skewy(45deg);
 	transform-origin: right;
-  }
+}
 
-  .mark4 {
+.mark4 {
 	margin-top: 174.5%;
 	margin-left: -3%;
 	min-width: 36.5%;
@@ -370,21 +267,21 @@ input[type="checkbox"] {
 	transform: skewY(-15deg) translate3d(20%, 22%, 0);
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .mark4:active{
+}
+
+.mark4:active {
 	margin-left: -65%;
 	margin-top: 190%;
-  }
+}
 
-  .mark4:before,
-  .mark4:after {
+.mark4:before,
+.mark4:after {
 	content: "";
 	position: absolute;
 	transition: all 500ms;
-  }
-  
-  .mark4:before {
+}
+
+.mark4:before {
 	background: var(--shadow-light-gray);
 	top: -10px;
 	left: 0;
@@ -392,9 +289,9 @@ input[type="checkbox"] {
 	height: 10px;
 	transform: skewx(45deg);
 	transform-origin: bottom;
-  }
-  
-  .mark4:after {
+}
+
+.mark4:after {
 	background: var(--shadow-dark-gray);
 	top: 0;
 	left: -9px;
@@ -402,9 +299,9 @@ input[type="checkbox"] {
 	height: 100%;
 	transform: skewy(45deg);
 	transform-origin: right;
-  }
+}
 
-  .mark5 {
+.mark5 {
 	margin-top: -6.4%;
 	margin-left: 31.6%;
 	min-width: 60.8%;
@@ -416,21 +313,21 @@ input[type="checkbox"] {
 	transform: skewY(-15deg) translate3d(20%, 22%, 0);
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .mark5:active{
+}
+
+.mark5:active {
 	margin-left: 110%;
 	margin-top: -27%;
-  }
+}
 
-  .mark5:before,
-  .mark5:after {
+.mark5:before,
+.mark5:after {
 	content: "";
 	position: absolute;
 	transition: all 500ms;
-  }
-  
-  .mark5:before {
+}
+
+.mark5:before {
 	background: var(--shadow-light-gray);
 	top: -10px;
 	left: 0;
@@ -438,9 +335,9 @@ input[type="checkbox"] {
 	height: 10px;
 	transform: skewx(45deg);
 	transform-origin: bottom;
-  }
-  
-  .mark5:after {
+}
+
+.mark5:after {
 	background: var(--shadow-dark-gray);
 	top: 0;
 	left: -9px;
@@ -448,9 +345,9 @@ input[type="checkbox"] {
 	height: 100%;
 	transform: skewy(45deg);
 	transform-origin: right;
-  }
+}
 
-  .mark6 {
+.mark6 {
 	margin-top: 27%;
 	margin-left: 32%;
 	min-width: 60%;
@@ -462,20 +359,21 @@ input[type="checkbox"] {
 	transform: skewY(-15deg) translate3d(20%, 22%, 0);
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  .mark6:active{
+}
+
+.mark6:active {
 	margin-left: 110%;
 	margin-top: 5%;
-  }
+}
 
-  .mark6:before,
-  .mark6:after {
+.mark6:before,
+.mark6:after {
 	content: "";
 	position: absolute;
 	transition: all 500ms;
-  }
-  
-  .mark6:before {
+}
+
+.mark6:before {
 	background: var(--shadow-light-gray);
 	top: -10px;
 	left: 0;
@@ -483,9 +381,9 @@ input[type="checkbox"] {
 	height: 10px;
 	transform: skewx(45deg);
 	transform-origin: bottom;
-  }
-  
-  .mark6:after {
+}
+
+.mark6:after {
 	background: var(--shadow-dark-gray);
 	top: 0;
 	left: -9px;
@@ -493,9 +391,9 @@ input[type="checkbox"] {
 	height: 100%;
 	transform: skewy(45deg);
 	transform-origin: right;
-  }
+}
 
-  .mark7 {
+.mark7 {
 	margin-top: 92%;
 	margin-left: 32%;
 	min-width: 60%;
@@ -507,21 +405,21 @@ input[type="checkbox"] {
 	transform: skewY(-15deg) translate3d(20%, 22%, 0);
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .mark7:active{
+}
+
+.mark7:active {
 	margin-left: 110%;
 	margin-top: 70%;
-  }
+}
 
-  .mark7:before,
-  .mark7:after {
+.mark7:before,
+.mark7:after {
 	content: "";
 	position: absolute;
 	transition: all 500ms;
-  }
-  
-  .mark7:before {
+}
+
+.mark7:before {
 	background: var(--shadow-light-gray);
 	top: -10px;
 	left: 0;
@@ -529,9 +427,9 @@ input[type="checkbox"] {
 	height: 10px;
 	transform: skewx(45deg);
 	transform-origin: bottom;
-  }
-  
-  .mark7:after {
+}
+
+.mark7:after {
 	background: var(--shadow-dark-gray);
 	top: 0;
 	left: -9px;
@@ -539,9 +437,9 @@ input[type="checkbox"] {
 	height: 100%;
 	transform: skewy(45deg);
 	transform-origin: right;
-  }
+}
 
-  .mark8 {
+.mark8 {
 	margin-top: 162.5%;
 	margin-left: 31.5%;
 	min-width: 61%;
@@ -553,21 +451,21 @@ input[type="checkbox"] {
 	transform: skewY(-15deg) translate3d(20%, 22%, 0);
 	transition: all 500ms cubic-bezier(0.17, 0.67, 0.27, 1.17);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .mark8:active{
+}
+
+.mark8:active {
 	margin-left: 110%;
 	margin-top: 139%;
-  }
+}
 
-  .mark8:before,
-  .mark8:after {
+.mark8:before,
+.mark8:after {
 	content: "";
 	position: absolute;
 	transition: all 500ms;
-  }
-  
-  .mark8:before {
+}
+
+.mark8:before {
 	background: var(--shadow-light-gray);
 	top: -10px;
 	left: 0;
@@ -575,9 +473,9 @@ input[type="checkbox"] {
 	height: 10px;
 	transform: skewx(45deg);
 	transform-origin: bottom;
-  }
-  
-  .mark8:after {
+}
+
+.mark8:after {
 	background: var(--shadow-dark-gray);
 	top: 0;
 	left: -9px;
@@ -585,42 +483,36 @@ input[type="checkbox"] {
 	height: 100%;
 	transform: skewy(45deg);
 	transform-origin: right;
-  }
+}
 
-  input[type="checkbox"]:checked ~ label[for="cool"] {
+input[type="checkbox"]:checked~label[for="cool"] {
 	transform: skewy(-15deg) translate3d(-150%, 22%, 0);
-  }
-  input[type="checkbox"]:checked ~ label[for="cool2"] {
+}
+
+input[type="checkbox"]:checked~label[for="cool2"] {
 	transform: skewy(-15deg) translate3d(-150%, 22%, 0);
-  }
-  input[type="checkbox"]:checked ~ label[for="cool3"] {
+}
+
+input[type="checkbox"]:checked~label[for="cool3"] {
 	transform: skewy(-15deg) translate3d(-150%, 22%, 0);
-  }
-  input[type="checkbox"]:checked ~ label[for="cool4"] {
+}
+
+input[type="checkbox"]:checked~label[for="cool4"] {
 	transform: skewy(-15deg) translate3d(-150%, 22%, 0);
-  }
-  input[type="checkbox"]:checked ~ label[for="cool5"] {
+}
+
+input[type="checkbox"]:checked~label[for="cool5"] {
 	transform: skewy(-15deg) translate3d(150%, 22%, 0);
-  }
-  input[type="checkbox"]:checked ~ label[for="cool6"] {
+}
+
+input[type="checkbox"]:checked~label[for="cool6"] {
 	transform: skewy(-15deg) translate3d(150%, 22%, 0);
-  }
-  input[type="checkbox"]:checked ~ label[for="cool7"] {
+}
+
+input[type="checkbox"]:checked~label[for="cool7"] {
 	transform: skewy(-15deg) translate3d(150%, 22%, 0);
-  }
-  input[type="checkbox"]:checked ~ label[for="cool8"] {
+}
+
+input[type="checkbox"]:checked~label[for="cool8"] {
 	transform: skewy(-15deg) translate3d(150%, 22%, 0);
-  }
-  /*
-  input[type="checkbox"]:checked ~ label[for="cool"]:before {
-	
-	top: -20px;
-	height: 20px;
-  }
-  
-  input[type="checkbox"]:checked ~ label[for="cool"]:after {
-	
-	left: -20px;
-	width: 20px;
-  }
-  */
+}
