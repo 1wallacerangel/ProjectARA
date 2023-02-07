@@ -1,6 +1,6 @@
 :root {
 	--size: max(5px, 0.85vmin);
-	--heght: 80em;
+	--heght: 70em;
 	--border-radius: 0.3rem;
 	--button-width: 0.333em;
 	--ease-out: cubic-bezier(.15, 0, .333, 1);
@@ -23,6 +23,7 @@ body {
 	min-height: 100vh;
 	font-size: var(--size);
 	overflow: hidden;
+	transition: all 0.7s;
 }
 
 .phone {
@@ -515,4 +516,15 @@ input[type="checkbox"]:checked~label[for="cool7"] {
 
 input[type="checkbox"]:checked~label[for="cool8"] {
 	transform: skewy(-15deg) translate3d(150%, 22%, 0);
+}
+
+@media (max-width:400px) {
+	:root{
+		--heght: 60em;
+	}
+}
+@media (max-width:300px) {
+	:root{
+		--heght: 40em;
+	}
 }
